@@ -1,0 +1,67 @@
+﻿@model NldtLession10Db.Models.NldtAccount
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/Nldt_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>NldtAccount</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NldtName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NldtName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NldtPassword)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NldtPassword)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NldtFullName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NldtFullName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NldtEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NldtEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NldtPhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NldtPhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NldtActive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NldtActive)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.NldtID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

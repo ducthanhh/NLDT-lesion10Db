@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NldtK22cnt3lession10DbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="NldtAccount">
+    <Key>
+      <PropertyRef Name="NldtID" />
+    </Key>
+    <Property Name="NldtID" Type="int" Nullable="false" />
+    <Property Name="NldtName" Type="nvarchar" MaxLength="50" />
+    <Property Name="NldtPassword" Type="nvarchar" MaxLength="50" />
+    <Property Name="NldtFullName" Type="nvarchar" MaxLength="50" />
+    <Property Name="NldtEmail" Type="nvarchar" MaxLength="50" />
+    <Property Name="NldtPhone" Type="nvarchar" MaxLength="50" />
+    <Property Name="NldtActive" Type="bit" />
+  </EntityType>
+  <EntityContainer Name="NldtK22cnt3lession10DbModelStoreContainer">
+    <EntitySet Name="NldtAccount" EntityType="Self.NldtAccount" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

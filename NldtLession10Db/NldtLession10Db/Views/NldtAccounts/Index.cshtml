@@ -1,0 +1,64 @@
+﻿@model IEnumerable<NldtLession10Db.Models.NldtAccount>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/Nldt_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NldtName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NldtPassword)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NldtFullName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NldtEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NldtPhone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NldtActive)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NldtName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NldtPassword)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NldtFullName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NldtEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NldtPhone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NldtActive)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.NldtID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.NldtID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.NldtID })
+        </td>
+    </tr>
+}
+
+</table>
